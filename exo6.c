@@ -1,3 +1,43 @@
+/*Algorithme:tableaualafin
+
+variable:
+     i,N,M,j:entier;
+     A:tableau entier[200];
+     B:tableau entier[50];
+debut
+    faire
+        afficher("veuillez entrer le nombre de case que vous voulez dans le tableau A=");
+        lire(N);
+    tantque(N>200);
+    faire
+        afficher("veuillez entrer le nombre de case que vous voulez dans le tableau B=");
+        lire("%d",&M);
+    tantque(N>50);
+    pour(i=0;i<N;i++)
+        afficher("Tableau A : entrer le nombre dans la case numero =",i);
+        lire(A[i]);
+    fpour
+    pour(i=0;i<M;i++)
+        afficher("Tableau B : entrer le nombre dans la case numero =",i);
+        lire(B[i]);
+    fpour
+    pour(i=0;i<N;i++)
+        afficher("T(A)[",i,"]=",A[i]);
+    fpour
+    pour(i=0;i<M;i++)
+        afficher("T(B)[",i,"]=",B[i]);
+    fpour
+    afficher("le tableau A est de dimension =",N);
+    afficher("le tableau B est de dimension =",M);
+    j=0;
+    pour(i=N;i<(N+M);i++)
+        A[i]<-B[j];
+        j++;
+    fpour
+    pour(i=0;i<(N+M);i++)
+        afficher("A[",i,"]=",A[i]);
+fin
+}*/
 #include<stdio.h>
 
 int main()
